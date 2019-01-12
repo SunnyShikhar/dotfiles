@@ -3,9 +3,7 @@ Sunny's MacOS Dotfiles
 
 Follow the steps for Sunny's ideal dev set up. 
 
-## Instructions
-
-### Basic Installations
+## Basic Installations
 
 1. Install iTerm
 2. Install Homebrew: https://brew.sh/
@@ -28,7 +26,7 @@ Follow the steps for Sunny's ideal dev set up.
     [difftool "default-difftool"]
     cmd = code --wait --diff $LOCAL $REMOTE'''
 
-### Zsh Glow Up
+## Zsh Glow Up
 
 1. Install zsh: `brew install zsh`
 2. Install Oh My Zsh: `sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"`
@@ -36,7 +34,7 @@ Follow the steps for Sunny's ideal dev set up.
 4. Ensure `export=` and `source` zsh directories are accurate with macname+files
 5. Install Powerline9k themes for Oh My Zsh: `git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k`
 6. Install Powerline9K fonts for more selection:
-::
+```
     # clone
     git clone https://github.com/powerline/fonts.git --depth=1
     # install
@@ -44,7 +42,8 @@ Follow the steps for Sunny's ideal dev set up.
     ./install.sh
     # clean-up a bit
     cd ..
-    rm -rf fonts 
+    rm -rf fonts
+```
 7. Install Homebrew fonts for icons: 
     `brew tap caskroom/fonts`
     `brew cask install font-hack-nerd-font`
@@ -55,7 +54,7 @@ Follow the steps for Sunny's ideal dev set up.
 12. Set up syntax highlighting: `git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting`
 13. Ensure all plugins are activated in `plugins=( [plugins...] zsh-syntax-highlighting)`
 
-### Spotify-Terminal Glow Up
+## Spotify-Terminal Glow Up
 
 1. Install Spotify for Mac 
 2. See if iTerm recognizes active songs from Spotify, if not: `brew install shpotify`
@@ -64,4 +63,4 @@ Follow the steps for Sunny's ideal dev set up.
 
 ENJOY!
 
-![terminal](https://github.com/sunnyshikhar/dotfiles/blob/master/terminal.png
+![terminal](https://github.com/sunnyshikhar/dotfiles/blob/master/terminal.png)
