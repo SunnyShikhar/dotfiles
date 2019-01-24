@@ -9,22 +9,32 @@ Follow the steps for Sunny's ideal dev set up.
 2. Install Homebrew: https://brew.sh/
 3. Install git: `brew install git`
 4. Configure git:
-    `git config --global user.name "FirstName LastName"`
-    `git config --global user.email "email@domain.com"`
-5. Check configuration
-    `git config --global user.name`
-    `git config --global user.email`
-6. Install text editor of choice: 
-    `brew tap caskroom/cask`
-    `brew cask install visual-studio-code`
+```
+    git config --global user.name "FirstName LastName"
+    git config --global user.email "email@domain.com"
+```
+5. Check configuration:
+```
+    git config --global user.name
+    git config --global user.email
+```
+6. Install text editor of choice:
+```
+    brew tap caskroom/cask
+    brew cask install visual-studio-code
+```
 7. Configure text editor as default editor for git:
-    `git config --global core.editor "code --wait"`
-    `git config --global -e`
+```
+    git config --global core.editor "code --wait"
+    git config --global -e
+```
 8. Use previous command to add following lines to git config:
-    '''[diff]
+```
+    [diff]
     tool = default-difftool
     [difftool "default-difftool"]
-    cmd = code --wait --diff $LOCAL $REMOTE'''
+    cmd = code --wait --diff $LOCAL $REMOTE
+```
 
 ## Zsh Glow Up
 
